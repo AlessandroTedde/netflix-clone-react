@@ -29,7 +29,7 @@ class ImgRow extends Component {
     return (
       <Container fluid className="bg-dark text-light">
         <h2 className="pt-5 pb-3 text-start">{this.props.title}</h2>
-        <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4">
+        <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6">
           {this.state.search.map((movie, index) => (
             <SingleCol key={index} imageUrl={movie.Poster} />
           ))}
